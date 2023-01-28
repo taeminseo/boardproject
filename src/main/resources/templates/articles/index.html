@@ -1,15 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko" xmlns:th="http://www.tymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>게시판 페이지</title>
 </head>
 
 <body>
-    <header>
-        header
-        <hr>
-    </header>
+    <header th:replace="header :: header"></header>
 
     <main>
         <form>
@@ -72,10 +69,7 @@
 
     </main>
 
-    <footer>
-        <hr>
-        footer
-    </footer>
+    <footer th:replace="footer :: footer"></footer>
 </body>
 
 </html>
